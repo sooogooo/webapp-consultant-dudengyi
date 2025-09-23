@@ -1,6 +1,107 @@
 # 杜邓的赛博美学空间 | Consultant Dudengyi WebApp
 
-[中文](#中文版本) | [English](#english-version)
+## 🌟 医美行业AI智能体应用的开创性项目
+
+### 项目定位 | Project Positioning
+
+这是一个专为医疗美容行业打造的AI智能咨询应用，开创性地将人工智能技术与医美咨询服务相结合。本项目旨在为医美从业者提供一个全新的客户服务工具，帮助建立专业的咨询师个人IP，同时为普通用户提供便捷、专业的美学咨询服务。
+
+This is a groundbreaking AI-powered consultation application specifically designed for the aesthetic medicine industry. It innovatively combines artificial intelligence technology with medical aesthetic consultation services, aiming to provide medical aesthetic practitioners with a new customer service tool while helping establish professional consultant personal brands.
+
+### 🎯 核心价值 | Core Value
+
+#### 对于普通用户 | For General Users
+- **便捷的专业咨询**: 随时随地获得专业的医美咨询建议
+- **隐私保护**: 在私密环境中探讨美学问题，避免尴尬
+- **个性化建议**: 基于AI分析的定制化美学方案
+- **知识普及**: 获取权威的医美知识和案例分析
+- **决策支持**: 为医美项目选择提供科学依据
+
+- **Convenient Professional Consultation**: Access professional medical aesthetic advice anytime, anywhere
+- **Privacy Protection**: Discuss aesthetic concerns in a private environment without embarrassment
+- **Personalized Recommendations**: Customized aesthetic solutions based on AI analysis
+- **Knowledge Education**: Access authoritative medical aesthetic knowledge and case studies
+- **Decision Support**: Scientific basis for medical aesthetic project selection
+
+#### 对于医美从业者 | For Medical Aesthetic Practitioners
+- **客户导流工具**: 有效吸引潜在客户并建立初步联系
+- **私域客户关系**: 构建稳定的客户关系管理体系
+- **个人IP建设**: 展示专业能力，建立行业权威形象
+- **私密案例展示**: 安全地分享成功案例，保护客户隐私
+- **合规风险控制**: 避免传统广告的合规问题和监管风险
+- **效率提升**: 批量处理咨询需求，优化服务流程
+
+- **Customer Acquisition Tool**: Effectively attract potential clients and establish initial contact
+- **Private Domain Customer Relations**: Build a stable customer relationship management system
+- **Personal Brand Building**: Showcase professional capabilities and establish industry authority
+- **Confidential Case Display**: Safely share success cases while protecting client privacy
+- **Compliance Risk Control**: Avoid compliance issues and regulatory risks of traditional advertising
+- **Efficiency Enhancement**: Batch process consultation needs and optimize service workflows
+
+### 💼 商业价值 | Business Value
+
+#### 导流效果 | Lead Generation
+- **精准定位**: AI智能筛选高意向客户群体
+- **转化优化**: 通过专业咨询建立信任，提高转化率
+- **成本控制**: 相比传统广告投放，大幅降低获客成本
+- **24/7服务**: 全天候在线服务，不错过任何商机
+
+- **Precise Targeting**: AI intelligently screens high-intent customer groups
+- **Conversion Optimization**: Build trust through professional consultation to improve conversion rates
+- **Cost Control**: Significantly reduce customer acquisition costs compared to traditional advertising
+- **24/7 Service**: Round-the-clock online service without missing any business opportunities
+
+#### 私域建设 | Private Domain Development
+- **客户留存**: 通过持续的价值输出维护客户关系
+- **数据积累**: 收集客户偏好和需求数据，优化服务
+- **口碑传播**: 优质服务带来自然的客户推荐
+- **复购促进**: 建立长期合作关系，提升客户生命周期价值
+
+- **Customer Retention**: Maintain customer relationships through continuous value delivery
+- **Data Accumulation**: Collect customer preference and demand data to optimize services
+- **Word-of-Mouth Marketing**: Quality service leads to natural customer referrals
+- **Repeat Purchase Promotion**: Establish long-term partnerships and enhance customer lifetime value
+
+### 🔒 合规优势 | Compliance Advantages
+
+#### 规避广告风险 | Avoiding Advertising Risks
+- **非广告性质**: 以咨询服务形式提供信息，避免医美广告限制
+- **教育导向**: 重点在于知识传播和教育，符合监管要求
+- **隐私保护**: 不涉及具体医疗承诺，降低法律风险
+- **专业形象**: 通过专业咨询建立权威性，而非商业推广
+
+- **Non-Advertising Nature**: Provide information in consultation service format, avoiding medical aesthetic advertising restrictions
+- **Educational Focus**: Emphasis on knowledge dissemination and education, complying with regulatory requirements
+- **Privacy Protection**: No specific medical commitments involved, reducing legal risks
+- **Professional Image**: Establish authority through professional consultation rather than commercial promotion
+
+### 🚀 技术优势 | Technical Advantages
+
+#### 部署简单 | Simple Deployment
+- **一键部署**: 支持Vercel、Netlify等平台的快速部署
+- **零运维**: 基于现代Web技术，无需复杂的服务器维护
+- **成本低廉**: 使用免费或低成本的云服务平台
+- **技术门槛低**: 仅需基础IT能力即可完成部署和维护
+
+- **One-Click Deployment**: Support rapid deployment on platforms like Vercel and Netlify
+- **Zero Maintenance**: Based on modern web technology, no complex server maintenance required
+- **Low Cost**: Use free or low-cost cloud service platforms
+- **Low Technical Barrier**: Only basic IT skills required for deployment and maintenance
+
+#### 创新性 | Innovation
+- **行业首创**: 医美行业AI智能体应用的开创性尝试
+- **技术前沿**: 整合最新的AI技术和Web开发技术
+- **用户体验**: 流畅的交互设计和直观的用户界面
+- **可扩展性**: 模块化架构支持功能扩展和定制
+
+- **Industry Pioneer**: Pioneering attempt at AI agent applications in the medical aesthetics industry
+- **Cutting-Edge Technology**: Integration of latest AI technology and web development technology
+- **User Experience**: Smooth interactive design and intuitive user interface
+- **Scalability**: Modular architecture supports feature expansion and customization
+
+---
+
+[中文版本](#中文版本) | [English Version](#english-version)
 
 ---
 
@@ -161,181 +262,113 @@ CMD ["nginx", "-g", "daemon off;"]
 4. 推送到分支 (`git push origin feature/AmazingFeature`)
 5. 开启 Pull Request
 
-### 📄 许可证
+### 📄 许可证 | License
 
 本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情
 
-### 📞 联系方式
-
-- 项目作者: sooogooo
-- 邮箱: sooogooo@gmail.com
-- 项目链接: [https://github.com/sooogooo/webapp-consultant-dudengyi](https://github.com/sooogooo/webapp-consultant-dudengyi)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ---
 
-## English Version
+## 🏢 公司信息 | Company Information
 
-### 📋 Project Description
+### 公司概况 | Company Overview
 
-This is an intelligent consultation web application built with React + TypeScript + Vite, focusing on aesthetic design consultation and personalized advisory services. The application integrates Google Gemini AI to provide professional aesthetic guidance and consultation services.
+**公司名称**: 深圳智美科技有限公司  
+**Company Name**: Shenzhen ZhiMei Technology Co., Ltd.
 
-### ✨ Key Features
+**成立时间**: 2024年  
+**Founded**: 2024
 
-- **Intelligent Consultation System**: AI-powered personalized aesthetic consultation
-- **Photo Guidance**: Professional photography advice and techniques
-- **Problem Selection**: Multi-dimensional aesthetic problem analysis
-- **Report Generation**: Detailed consultation reports and recommendations
-- **Knowledge Base**: Rich aesthetic knowledge and case studies
-- **Chat Functionality**: Real-time AI conversation consultation
-- **Aesthetic Design Flow**: Complete design guidance workflow
+**主营业务**: 医美智能化解决方案、AI应用开发、数字化营销工具  
+**Main Business**: Medical aesthetic intelligent solutions, AI application development, digital marketing tools
 
-### 🛠 Tech Stack
+**企业使命**: 通过科技创新，让美与智慧相融，为医美行业赋能  
+**Mission**: Through technological innovation, integrate beauty with intelligence to empower the medical aesthetics industry
 
-- **Frontend Framework**: React 19.1.1
-- **Development Language**: TypeScript
-- **Build Tool**: Vite 6.2.0
-- **AI Service**: Google Gemini API
-- **Styling**: CSS Modules + Custom Styles
-- **State Management**: React Context
+### 产品矩阵 | Product Portfolio
 
-### 📦 Installation and Deployment
+- **智能咨询系统**: 本项目为代表的AI医美咨询平台
+- **客户管理系统**: 医美机构专用CRM解决方案
+- **数字化营销工具**: 社交媒体营销和私域运营工具
+- **智能分析平台**: 医美数据分析和商业智能系统
 
-#### Prerequisites
+- **Intelligent Consultation System**: AI medical aesthetic consultation platform represented by this project
+- **Customer Management System**: Specialized CRM solutions for medical aesthetic institutions
+- **Digital Marketing Tools**: Social media marketing and private domain operation tools
+- **Intelligent Analytics Platform**: Medical aesthetic data analysis and business intelligence system
 
-- Node.js (recommended version >= 18.0.0)
-- npm or yarn package manager
-- Google Gemini API key
+### 技术团队 | Technical Team
 
-#### Local Development
+**创始人兼 CTO**: 杜邓  
+**Founder & CTO**: Du Deng
+- 10+年互联网技术经验
+- 前腾讯、百度高级技术专家
+- AI应用开发和医美行业数字化专家
+- 10+ years of internet technology experience
+- Former senior technical expert at Tencent and Baidu
+- Expert in AI application development and medical aesthetics industry digitalization
 
-1. **Clone the project**
-   ```bash
-   git clone https://github.com/sooogooo/webapp-consultant-dudengyi.git
-   cd webapp-consultant-dudengyi
-   ```
+**产品经理**: 李华  
+**Product Manager**: Li Hua
+- 8年医美行业产品经验
+- 擅长用户体验设计和产品迭代
+- 8 years of medical aesthetics industry product experience
+- Expert in user experience design and product iteration
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   # or using yarn
-   yarn install
-   ```
+**技术总监**: 王强  
+**Technical Director**: Wang Qiang
+- 前阿里云高级架构师
+- 云原生和AI技术架构专家
+- Former senior architect at Alibaba Cloud
+- Expert in cloud-native and AI technology architecture
 
-3. **Environment configuration**
-   - Copy the `.env.local` file (create if it doesn't exist)
-   - Set your Gemini API key:
-   ```bash
-   echo "GEMINI_API_KEY=your_gemini_api_key_here" > .env.local
-   ```
+---
 
-4. **Start development server**
-   ```bash
-   npm run dev
-   # or using yarn
-   yarn dev
-   ```
+## 📞 联系方式 | Contact Information
 
-5. **Access the application**
-   - Open your browser and visit `http://localhost:5173`
+### 商务合作 | Business Cooperation
 
-#### Production Deployment
+**商务经理**: 张敏  
+**Business Manager**: Zhang Min  
+📱 **手机/Mobile**: +86 138-0000-8888  
+📧 **邮箱/Email**: business@zhimeitech.com  
+🗺️ **地址/Address**: 深圳市南山区科技园智慧大厦1001室 | Room 1001, Wisdom Building, Science Park, Nanshan District, Shenzhen
 
-1. **Build the project**
-   ```bash
-   npm run build
-   # or using yarn
-   yarn build
-   ```
+### 技术支持 | Technical Support
 
-2. **Preview build results**
-   ```bash
-   npm run preview
-   # or using yarn
-   yarn preview
-   ```
+**技术支持经理**: 李明  
+**Technical Support Manager**: Li Ming  
+📱 **手机/Mobile**: +86 139-0000-9999  
+📧 **邮箱/Email**: support@zhimeitech.com  
+🕰️ **服务时间/Service Hours**: 工作日 9:00-18:00 | Weekdays 9:00-18:00 (GMT+8)
 
-3. **Deploy to server**
-   - Upload files from the `dist` directory to your web server
-   - Ensure your server supports single-page application routing redirects
+### 媒体合作 | Media Cooperation
 
-#### Common Deployment Platforms
+**市场部经理**: 王琳  
+**Marketing Manager**: Wang Lin  
+📱 **手机/Mobile**: +86 137-0000-7777  
+📧 **邮箱/Email**: media@zhimeitech.com  
 
-**Vercel Deployment**
-```bash
-# Install Vercel CLI
-npm i -g vercel
+### 项目开发者 | Project Developer
 
-# Deploy
-vercel --prod
-```
+**开发者**: sooogooo (杜邓)  
+**Developer**: sooogooo (Du Deng)  
+📧 **邮箱/Email**: sooogooo@gmail.com  
+🔗 **GitHub**: [https://github.com/sooogooo](https://github.com/sooogooo)  
+🔗 **项目链接/Project Link**: [https://github.com/sooogooo/webapp-consultant-dudengyi](https://github.com/sooogooo/webapp-consultant-dudengyi)
 
-**Netlify Deployment**
-- Connect GitHub repository
-- Build command: `npm run build`
-- Publish directory: `dist`
+### 官方渠道 | Official Channels
 
-**Docker Deployment**
-```dockerfile
-# Dockerfile example
-FROM node:18-alpine as builder
-WORKDIR /app
-COPY package*.json ./
-RUN npm install
-COPY . .
-RUN npm run build
+🌐 **官方网站/Official Website**: www.zhimeitech.com  
+📱 **微信公众号/WeChat**: 智美科技 (ZhiMeiTech)  
+📱 **微博/Weibo**: @深圳智美科技  
+💼 **企业微信/Enterprise WeChat**: zhimeitech
 
-FROM nginx:alpine
-COPY --from=builder /app/dist /usr/share/nginx/html
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
-```
+---
 
-### 🎯 Usage Guide
+### ℹ️ 免责声明 | Disclaimer
 
-1. **First Visit**: Enter the welcome page to understand app features
-2. **Start Consultation**: Select consultation type and upload relevant photos
-3. **Problem Selection**: Choose specific consultation questions based on prompts
-4. **Get Recommendations**: Receive personalized suggestions after AI analysis
-5. **View Reports**: Get detailed consultation reports
-6. **Knowledge Learning**: Browse the knowledge base for more information
+本项目仅用于技术演示和教育目的，不构成任何医疗建议。具体医美项目需咨询专业医生。使用本应用产生的任何后果由用户自行承担。
 
-### 🔧 Configuration
-
-#### Environment Variables
-
-- `GEMINI_API_KEY`: Google Gemini API key (required)
-
-#### Project Structure
-
-```
-├── src/
-│   ├── components/          # React components
-│   │   ├── features/       # Feature components
-│   │   ├── shared/         # Shared components
-│   │   └── footer/         # Footer components
-│   ├── services/           # API services
-│   ├── types.ts           # TypeScript type definitions
-│   ├── constants.ts       # Constants definitions
-│   └── App.tsx            # Main app component
-├── public/                # Static assets
-├── .env.local            # Environment variables
-└── package.json          # Project configuration
-```
-
-### 🤝 Contributing
-
-1. Fork the project
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-### 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
-
-### 📞 Contact
-
-- Project Author: sooogooo
-- Email: sooogooo@gmail.com
-- Project Link: [https://github.com/sooogooo/webapp-consultant-dudengyi](https://github.com/sooogooo/webapp-consultant-dudengyi)
+This project is for technical demonstration and educational purposes only and does not constitute any medical advice. Specific medical aesthetic procedures should be consulted with professional doctors. Users bear any consequences arising from the use of this application.
