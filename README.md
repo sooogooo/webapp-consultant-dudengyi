@@ -270,85 +270,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🏢 公司信息 | Company Information
-
-### 公司概况 | Company Overview
-
-**公司名称**: 深圳智美科技有限公司  
-**Company Name**: Shenzhen ZhiMei Technology Co., Ltd.
-
-**成立时间**: 2024年  
-**Founded**: 2024
-
-**主营业务**: 医美智能化解决方案、AI应用开发、数字化营销工具  
-**Main Business**: Medical aesthetic intelligent solutions, AI application development, digital marketing tools
-
-**企业使命**: 通过科技创新，让美与智慧相融，为医美行业赋能  
-**Mission**: Through technological innovation, integrate beauty with intelligence to empower the medical aesthetics industry
-
-### 产品矩阵 | Product Portfolio
-
-- **智能咨询系统**: 本项目为代表的AI医美咨询平台
-- **客户管理系统**: 医美机构专用CRM解决方案
-- **数字化营销工具**: 社交媒体营销和私域运营工具
-- **智能分析平台**: 医美数据分析和商业智能系统
-
-- **Intelligent Consultation System**: AI medical aesthetic consultation platform represented by this project
-- **Customer Management System**: Specialized CRM solutions for medical aesthetic institutions
-- **Digital Marketing Tools**: Social media marketing and private domain operation tools
-- **Intelligent Analytics Platform**: Medical aesthetic data analysis and business intelligence system
-
-### 技术团队 | Technical Team
-
-**创始人兼 CTO**: 杜邓  
-**Founder & CTO**: Du Deng
-- 10+年互联网技术经验
-- 前腾讯、百度高级技术专家
-- AI应用开发和医美行业数字化专家
-- 10+ years of internet technology experience
-- Former senior technical expert at Tencent and Baidu
-- Expert in AI application development and medical aesthetics industry digitalization
-
-**产品经理**: 李华  
-**Product Manager**: Li Hua
-- 8年医美行业产品经验
-- 擅长用户体验设计和产品迭代
-- 8 years of medical aesthetics industry product experience
-- Expert in user experience design and product iteration
-
-**技术总监**: 王强  
-**Technical Director**: Wang Qiang
-- 前阿里云高级架构师
-- 云原生和AI技术架构专家
-- Former senior architect at Alibaba Cloud
-- Expert in cloud-native and AI technology architecture
-
----
-
 ## 📞 联系方式 | Contact Information
-
-### 商务合作 | Business Cooperation
-
-**商务经理**: 张敏  
-**Business Manager**: Zhang Min  
-📱 **手机/Mobile**: +86 138-0000-8888  
-📧 **邮箱/Email**: business@zhimeitech.com  
-🗺️ **地址/Address**: 深圳市南山区科技园智慧大厦1001室 | Room 1001, Wisdom Building, Science Park, Nanshan District, Shenzhen
-
-### 技术支持 | Technical Support
-
-**技术支持经理**: 李明  
-**Technical Support Manager**: Li Ming  
-📱 **手机/Mobile**: +86 139-0000-9999  
-📧 **邮箱/Email**: support@zhimeitech.com  
-🕰️ **服务时间/Service Hours**: 工作日 9:00-18:00 | Weekdays 9:00-18:00 (GMT+8)
-
-### 媒体合作 | Media Cooperation
-
-**市场部经理**: 王琳  
-**Marketing Manager**: Wang Lin  
-📱 **手机/Mobile**: +86 137-0000-7777  
-📧 **邮箱/Email**: media@zhimeitech.com  
 
 ### 项目开发者 | Project Developer
 
@@ -357,13 +279,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 📧 **邮箱/Email**: sooogooo@gmail.com  
 🔗 **GitHub**: [https://github.com/sooogooo](https://github.com/sooogooo)  
 🔗 **项目链接/Project Link**: [https://github.com/sooogooo/webapp-consultant-dudengyi](https://github.com/sooogooo/webapp-consultant-dudengyi)
-
-### 官方渠道 | Official Channels
-
-🌐 **官方网站/Official Website**: www.zhimeitech.com  
-📱 **微信公众号/WeChat**: 智美科技 (ZhiMeiTech)  
-📱 **微博/Weibo**: @深圳智美科技  
-💼 **企业微信/Enterprise WeChat**: zhimeitech
 
 ---
 
