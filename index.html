@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://docs.bccsw.cn/images/const-yeqian/headlogo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aesthetics Space | 叶倩倩的美学小屋</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="一款由 AI 驱动的网页应用，用于初步的医美咨询。上传照片，选择问题，与 AI 聊天，并生成摘要。">
+    <meta name="keywords" content="AI, 医美, 咨询, 皮肤, 美容, 人工智能">
+    <meta name="author" content="Aesthetics Space">
+    
+    <!-- Preconnect to CDNs for faster loading -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://esm.sh" crossorigin>
+    <link rel="preconnect" href="https://docs.bccsw.cn" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script>
+      // Add Typography plugin for prose styling
+      tailwind.config = {
+        plugins: [
+          tailwind.plugin(function({ addComponents }) {
+            addComponents({
+              '.prose': {
+                '--tw-prose-body': 'var(--color-text-base)',
+                '--tw-prose-headings': 'var(--color-text-base)',
+                '--tw-prose-lead': 'var(--color-text-muted)',
+                '--tw-prose-links': 'var(--color-primary)',
+                '--tw-prose-bold': 'var(--color-text-base)',
+                '--tw-prose-counters': 'var(--color-text-muted)',
+                '--tw-prose-bullets': 'var(--color-border)',
+                '--tw-prose-hr': 'var(--color-border)',
+                '--tw-prose-quotes': 'var(--color-text-base)',
+                '--tw-prose-quote-borders': 'var(--color-primary)',
+                '--tw-prose-captions': 'var(--color-text-muted)',
+                '--tw-prose-code': 'var(--color-primary)',
+                '--tw-prose-pre-code': 'var(--color-text-base)',
+                '--tw-prose-pre-bg': 'var(--color-background)',
+                '--tw-prose-th-borders': 'var(--color-border)',
+                '--tw-prose-td-borders': 'var(--color-border)',
+                'h1, h2, h3': {
+                    'font-weight': '400' /* Use lighter font weight for elegance */
+                },
+                 'h1': { 'font-size': '2.25em' },
+                 'h2': { 'font-size': '1.75em' },
+                 'h3': { 'font-size': '1.5em' },
+                 'p, ul, ol': {
+                    'line-height': '1.75'
+                 }
+              }
+            })
+          })
+        ]
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoVBL5gI9kDXrdEMJdWTIzqtjAX8gg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+
+    <!-- Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+      /* Base styles and CSS variables for theming */
+      :root {
+        --font-sans: 'Manrope', 'Noto Sans SC', sans-serif;
+        
+        /* Default Theme (Dark) */
+        --color-background: #111827; /* gray-900 */
+        --color-surface: #1f2937; /* gray-800 */
+        --color-primary: #3b82f6; /* blue-600 */
+        --color-primary-hover: #2563eb; /* blue-700 */
+        --color-text-base: #e5e7eb; /* gray-200 */
+        --color-text-muted: #9ca3af; /* gray-400 */
+        --color-border: #374151; /* gray-700 */
+        --color-danger: #ef4444; /* red-500 */
+        --color-success: #22c55e; /* green-500 */
+        --color-warning: #facc15; /* yellow-400 */
+        --color-info: #60a5fa; /* blue-400 */
+
+        --anim-duration: 0.7s;
+      }
+      body {
+        font-family: var(--font-sans);
+        background-color: var(--color-background);
+        color: var(--color-text-base);
+        letter-spacing: 0.025em;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      .font-size-sm { font-size: 14px; line-height: 1.5; }
+      .font-size-md { font-size: 16px; line-height: 1.6; }
+      .font-size-lg { font-size: 18px; line-height: 1.7; }
+      
+      /* --- Splash Screen Base Styles --- */
+      #splash-screen {
+        position: fixed;
+        inset: 0;
+        background-color: var(--color-background);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease-out;
+        opacity: 1;
+        overflow: hidden;
+      }
+      #splash-screen.fade-out {
+        opacity: 0;
+      }
+      .splash-content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+      .splash-logo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .splash-title {
+        font-size: 1.875rem; /* 30px */
+        font-weight: 700;
+        color: var(--color-text-base);
+      }
+      .splash-subtitle {
+        font-size: 1rem;
+        color: var(--color-text-muted);
+        min-height: 1.5rem; /* prevent layout shift */
+        transition: opacity 0.5s ease-in-out;
+      }
+     
+      /* --- Splash Screen Animation Effects --- */
+      @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+      @keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+      @keyframes zoomIn { from { opacity: 0; transform: scale(0.8); } to { opacity: 1; transform: scale(1); } }
+      @keyframes blurIn { from { opacity: 0; filter: blur(10px); } to { opacity: 1; filter: blur(0); } }
+      @keyframes flipX { from { opacity: 0; transform: rotateX(-90deg); } to { opacity: 1; transform: rotateX(0); } }
+      @keyframes slideTop { from { opacity: 0; transform: translateY(-100%); } to { opacity: 1; transform: translateY(0); } }
+      @keyframes slideBottom { from { opacity: 0; transform: translateY(100%); } to { opacity: 1; transform: translateY(0); } }
+      @keyframes spotlight { from { clip-path: circle(0% at 50% 50%); } to { clip-path: circle(150% at 50% 50%); } }
+      @keyframes pulseGlow { 0%, 100% { box-shadow: 0 0 15px -5px var(--color-primary); } 50% { box-shadow: 0 0 30px 5px var(--color-primary); } }
+
+      .splash-content > * { opacity: 0; }
+      [data-effect] .splash-content > * { animation-duration: var(--anim-duration); animation-fill-mode: forwards; animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+      
+      /* Staggered delays for children */
+      [data-effect] .splash-content > *:nth-child(1) { animation-delay: 0s; }
+      [data-effect] .splash-content > *:nth-child(2) { animation-delay: 0.2s; }
+      [data-effect] .splash-content > *:nth-child(3) { animation-delay: 0.4s; }
+      
+      /* Set animation names */
+      [data-effect="fade-in"] .splash-content > *,
+      [data-effect="staggered-fade"] .splash-content > *,
+      [data-effect="spotlight"] .splash-content > * { animation-name: fadeIn; }
+      [data-effect="slide-up"] .splash-content > * { animation-name: slideUp; }
+      [data-effect="zoom-in"] .splash-content > * { animation-name: zoomIn; }
+      [data-effect="blur-in"] .splash-content > * { animation-name: blurIn; }
+      [data-effect="flip-x"] .splash-content > * { animation-name: flipX; transform-origin: center; }
+      
+      /* --- Specific effect overrides --- */
+      [data-effect="split-reveal"] .splash-logo { animation-name: slideTop; animation-delay: 0s; }
+      [data-effect="split-reveal"] .splash-title { animation-name: slideBottom; animation-delay: 0s; }
+      [data-effect="split-reveal"] .splash-subtitle { animation-name: fadeIn; animation-delay: 0.5s; }
+
+      [data-effect="spotlight"] { animation: spotlight 1.5s forwards; }
+
+      [data-effect="glitch"] .splash-title { animation: fadeIn 0.1s forwards; animation-delay: 0.2s; }
+      [data-effect="glitch"] .splash-title::before, [data-effect="glitch"] .splash-title::after { content: attr(data-text); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--color-background); overflow: hidden; }
+      [data-effect="glitch"] .splash-title::before { left: 2px; text-shadow: -2px 0 var(--color-danger); animation: glitch-anim-1 2s infinite linear alternate-reverse; }
+      [data-effect="glitch"] .splash-title::after { left: -2px; text-shadow: -2px 0 var(--color-info), 2px 2px var(--color-danger); animation: glitch-anim-2 2s infinite linear alternate-reverse; }
+      @keyframes glitch-anim-1 { 0%, 10%, 12%, 100% { clip-path: inset(0 0 0 0); } 11% { clip-path: inset(40% 0 60% 0); } }
+      @keyframes glitch-anim-2 { 0%, 10%, 12%, 100% { clip-path: inset(0 0 0 0); } 11% { clip-path: inset(20% 0 80% 0); } }
+      [data-effect="glitch"] .splash-logo { animation-name: fadeIn; animation-delay: 0s; }
+      [data-effect="glitch"] .splash-subtitle { animation-name: fadeIn; animation-delay: 0.4s; }
+      
+      [data-effect="pulse-glow"] .splash-logo { animation: pulseGlow 2s infinite, fadeIn var(--anim-duration) forwards; animation-delay: 0s; }
+      [data-effect="pulse-glow"] .splash-title { animation-name: fadeIn; animation-delay: 0.2s; }
+      [data-effect="pulse-glow"] .splash-subtitle { animation-name: fadeIn; animation-delay: 0.4s; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.13.0",
+    "react-dom": "https://esm.sh/react-dom@^19.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="splash-screen">
+      <div class="splash-content">
+        <img src="https://docs.bccsw.cn/images/const-yeqian/headlogo.png" alt="Logo" class="splash-logo">
+        <h1 class="splash-title" data-text="叶倩倩的美学小屋">叶倩倩的美学小屋</h1>
+        <p id="splash-subtitle" class="splash-subtitle"></p>
+      </div>
+    </div>
+    <div id="root" style="display: none;"></div>
+    <script>
+      const splashScreenStartTime = Date.now();
+      let splashSubtitleInterval;
+
+      function showApp() {
+        if (splashSubtitleInterval) {
+          clearInterval(splashSubtitleInterval);
+        }
+        const splashScreen = document.getElementById('splash-screen');
+        const rootElement = document.getElementById('root');
+        
+        const elapsedTime = Date.now() - splashScreenStartTime;
+        const minDisplayTime = 3000; // 3 seconds
+        const delay = Math.max(0, minDisplayTime - elapsedTime);
+
+        setTimeout(() => {
+          if (splashScreen && rootElement) {
+              rootElement.style.display = 'block';
+              splashScreen.classList.add('fade-out');
+              // Hide splash screen after fade out transition (500ms in CSS)
+              setTimeout(() => {
+                  splashScreen.style.display = 'none';
+              }, 500); 
+          }
+        }, delay);
+      }
+
+      // Set a random effect and subtitle text on page load for the splash screen
+      document.addEventListener('DOMContentLoaded', () => {
+        const splashScreen = document.getElementById('splash-screen');
+        const titleElement = document.querySelector('.splash-title');
+        const subtitleElement = document.getElementById('splash-subtitle');
+
+        if (splashScreen) {
+          const effects = [
+            'fade-in', 'slide-up', 'zoom-in', 'blur-in', 
+            'flip-x', 'split-reveal', 'spotlight', 
+            'staggered-fade', 'glitch', 'pulse-glow'
+          ];
+          const randomEffect = effects[Math.floor(Math.random() * effects.length)];
+          splashScreen.dataset.effect = randomEffect;
+        }
+
+        if (titleElement) {
+          titleElement.dataset.text = titleElement.textContent || '';
+        }
+
+        if (subtitleElement) {
+          const wittyTexts = [
+            "正在唤醒 AI 审美...",
+            "调配美丽秘方中...",
+            "加载个性化魔法...",
+            "即将揭晓您的专属美丽方案...",
+            "让科技与美学相遇...",
+            "您的美丽顾问正在上线..."
+          ];
+          let textIndex = 0;
+          
+          const updateText = () => {
+            subtitleElement.style.opacity = 0;
+            setTimeout(() => {
+                textIndex = (textIndex + 1) % wittyTexts.length;
+                subtitleElement.textContent = wittyTexts[textIndex];
+                subtitleElement.style.opacity = 1;
+            }, 500); // Wait for fade out before changing text
+          };
+          
+          // Set initial text
+          subtitleElement.textContent = wittyTexts[textIndex];
+          // Set interval to change it
+          splashSubtitleInterval = setInterval(updateText, 2500);
+        }
+      });
+    </script>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
